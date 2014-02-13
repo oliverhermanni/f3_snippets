@@ -17,9 +17,9 @@ you want to add. You can also add external URLs eg from CDNs, the asset manager 
 
 Example:
     {{@css_assets([
-        "css/bootstrap.min.css",
-        "font-awesome/css/font-awesome.css",
-        "css/style.css"
+    "css/bootstrap.min.css",
+    "font-awesome/css/font-awesome.css",
+    "css/style.css"
     ])}}
 
 
@@ -29,9 +29,9 @@ Javascript works the same.
 
 Example:
     {{@js_assets([
-        "http://code.jquery.com/jquery-1.10.1.min.js",
-        "js/bootstrap.min.js",
-        "js/script.js"
+    "http://code.jquery.com/jquery-1.10.1.min.js",
+    "js/bootstrap.min.js",
+    "js/script.js"
     ])}}
 
 ***
