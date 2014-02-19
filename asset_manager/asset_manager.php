@@ -4,8 +4,7 @@
  * Asset Helper for CSS
  */
 $f3->set('css_assets', function() {
-    $f3 = \Base::instance();
-    $theme = $f3->get('theme');
+    $theme = \Base::instance()->get('theme');
 
     $assets = func_get_args();
     $res = '';
@@ -21,8 +20,7 @@ $f3->set('css_assets', function() {
  * Asset Helper for JS
  */
 $f3->set('js_assets', function(){
-    $f3 = \Base::instance();
-    $theme = $f3->get('theme');
+    $theme = \Base::instance()->get('theme');
 
     $assets = func_get_args();
 
@@ -35,6 +33,12 @@ $f3->set('js_assets', function(){
     return $res;
 });
 
+/**
+ * Checks for valid URL
+ *
+ * @param $url
+ * @return bool
+ */
 function validUrl ($url) {
     return \Audit::instance()->url($url);
 }
