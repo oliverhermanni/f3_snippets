@@ -2,12 +2,12 @@
 
 /**
  * Asset Helper for CSS
- *
- * @param array $css_files
  */
-$f3->set('css_assets', function($assets) {
+$f3->set('css_assets', function() {
     $f3 = \Base::instance();
     $theme = $f3->get('theme');
+
+    $assets = func_get_args();
 
     $res = '';
     $audit = \Audit::instance();
@@ -22,12 +22,12 @@ $f3->set('css_assets', function($assets) {
 
 /**
  * Asset Helper for JS
- *
- * @param array $js_files
  */
-$f3->set('js_assets', function($assets){
+$f3->set('js_assets', function(){
     $f3 = \Base::instance();
     $theme = $f3->get('theme');
+
+    $assets = func_get_args();
 
     $res = '';
     $audit = \Audit::instance();
