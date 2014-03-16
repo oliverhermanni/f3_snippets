@@ -1,16 +1,22 @@
 Asset manager
 =============
-The asset manager allows an easy way to implement CSS and JS files, if you use different themes in F3. All
-you have to do is to create an assets folder in your public folder. In there you create a folder with your
-theme name (eg. 'default', if your main theme is called 'default'). There you store all css and js files in
-their usual folders.
+The asset manager allows an easy way to implement CSS and JS files, if
+you use different themes in F3. All you have to do is to create an
+assets folder in your public folder. In there you create a folder with
+your theme name (eg. 'default', if your main theme is called
+'default'). There you store all css and js files in their usual
+folders.
 
-Save your current theme name in the hive, eg. $f3->set('theme', 'default').
+Save your current theme name in the hive, eg.
+
+    $f3->set('theme', 'default').
 
 Style sheets
 ------------
-Add a css_assets function in your layout or header file. As parameter you use an array with all css files
-you want to add. You can also add external URLs eg from CDNs, the asset manager recognizes them automatically.
+Add a css_assets function in your layout or header file. As parameter
+you use an array with all css files you want to add. You can also add
+external URLs eg from CDNs, the asset manager recognizes them
+automatically.
 
 Example:
 
