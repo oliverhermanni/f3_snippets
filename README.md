@@ -1,10 +1,15 @@
 F3 Snippets
 ===========
-Here are some functions I use regulary in my PHP projects, when I use the PHP Fat Free Framework
+Here are some functions I use regulary in my PHP projects, when I use
+the  PHP Fat Free Framework
 
 Asset manager
 --------------
 An easy to use way to implement css and js files of your current theme.
+
+Config loader
+-------------
+A loader for all config files in a folder. Also allows staging.
 
 #### License
 
