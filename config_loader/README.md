@@ -1,8 +1,10 @@
 Config loader
 =============
-The config loader reads all config files from a folder. If you use
-.htaccess based staging it allows to read files from a folder based
-on the stage.
+The config loader reads all config files from a folder. Just include
+the file in your source.
+
+If you use .htaccess based staging it allows to read files from a
+folder based on the stage.
 
 You can set a stage in your .htaccess file like:
 
