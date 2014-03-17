@@ -11,15 +11,22 @@ You can set a stage in your .htaccess file like:
 Eg. you have different DB settings for your production server (as you
 should ;) ). Now your config folder should contain 1 extra folder. In
 
-config/db.ini
+    config/db.ini
 
 you have your regular settings for your development system. And in
 
-config/production/db.ini
+    config/production/db.ini
 
-you have the live db settings.
+you have the live db settings. As they are loaded after the regular
+config files they overwrite all settings. Of course both ini files
+should have the same structure, like
 
-The ini files should have the same structure of course.
+    [DB]
+    host=localhost
+    port=3306
+    dbname=your_database
+    username=root
+    password=
 
 ***
 
