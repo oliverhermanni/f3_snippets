@@ -1,7 +1,21 @@
 F3 Snippets
 ===========
 Here are some functions I use regulary in my PHP projects, when I use
-the  PHP Fat Free Framework
+the  PHP Fat Free Framework.
+
+Usually the files included are just snippets. You probably need to
+adapt them to your application.
+
+All my projects are set up like this:
+
+    app/            // all my source code for the current app
+    configs/        // the config files included
+    libs/           // the F3 source code
+    public/         // the web root
+    themes/         // The template files
+
+I might release my F3 setup in a different Github repo, if I feel
+it's ready.
 
 Asset manager
 --------------
